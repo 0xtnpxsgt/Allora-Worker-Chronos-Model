@@ -47,7 +47,7 @@ nano allora-chain/basic-coin-prediction-node/app.py
 ```bash
 nano allora-chain/basic-coin-prediction-node/docker-compose.yml
 ```
-#### Step 7: Build.
+## Step 7: Build.
 - 1 
 ```bash
 cd allora-chain/basic-coin-prediction-node/
