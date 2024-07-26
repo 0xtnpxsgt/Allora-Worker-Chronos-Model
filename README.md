@@ -413,7 +413,7 @@ wget -O checkyourworker.sh https://raw.githubusercontent.com/casual1st/allorawor
 ./checkyourworker.sh
 ```
 
-### HAVING PROBLEM WITH THE SETUP? JOIN US HERE: https://discord.gg/QTAqpuRDhP
+#### HAVING PROBLEM WITH THE SETUP? JOIN US HERE: https://discord.gg/QTAqpuRDhP | help is on the way! :D
 
 
 
