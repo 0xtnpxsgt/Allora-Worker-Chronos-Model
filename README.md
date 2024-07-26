@@ -43,7 +43,7 @@ cat head-data/keys/identity
 ```
 
 ## Step 5: Edit App.py
-- Register on Coingecko & Create Demo API KEY
+- Register on Coingecko https://www.coingecko.com/en/developers/dashboard & Create Demo API KEY
 - Copy & Replace API with your `COINGECKO API` , then save `Ctrl+X Y ENTER`.
 ```bash
 sudo rm -rf app.py && sudo nano app.py
