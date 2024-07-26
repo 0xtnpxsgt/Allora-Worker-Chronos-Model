@@ -54,6 +54,9 @@ execute_with_prompt 'sudo docker run -it --entrypoint=bash -v ./workers/worker-1
 echo
 execute_with_prompt 'sudo docker run -it --entrypoint=bash -v ./workers/worker-2:/data alloranetwork/allora-inference-base:latest -c "mkdir -p /data/keys && (cd /data/keys && allora-keys)"'
 echo
+execute_with_prompt 'cd'
+echo
+
 
 echo -e "${BOLD}${DARK_YELLOW}WGET DEFAULT FILE:${RESET}"
 execute_with_prompt 'wget -q https://raw.githubusercontent.com/0xtnpxsgt/Allora-Worker-Chronos-Model/main/Dockerfile -O allora-chain/basic-coin-prediction-node/Dockerfile'
