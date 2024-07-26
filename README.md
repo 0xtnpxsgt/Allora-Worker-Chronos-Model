@@ -381,6 +381,14 @@ docker compose build && docker compose up -d
 ```
 ------------------------------------------------------------------------------
 
+#### Check Docker Status
+```bash
+docker ps
+```
+# Result:
+<img width="1370" alt="Screenshot 1403-05-05 at 6 55 33 PM" src="https://github.com/user-attachments/assets/b58b264b-b4d7-4bb2-8ca2-2908b5d6e70c">
+
+
 #### Check your node status
 ```bash
 # Check worker 2 logs
