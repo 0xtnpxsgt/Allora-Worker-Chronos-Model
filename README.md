@@ -179,7 +179,7 @@ python-dotenv
 - Copy & Paste this code , `Ctrl+X Y ENTER` to save.
 
 ```bash
-sudo rm -rf app.py && sudo nano Dockerfile
+sudo rm -rf Dockerfile && sudo nano Dockerfile
 ```
 ```bash
 # Use an official Python runtime as the base image
