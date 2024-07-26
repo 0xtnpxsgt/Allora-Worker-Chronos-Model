@@ -65,5 +65,5 @@ echo
 execute_with_prompt 'wget -q https://raw.githubusercontent.com/0xtnpxsgt/Allora-Worker-Chronos-Model/main/requirements.txt -O allora-chain/basic-coin-prediction-node/requirements.txt'
 echo
 
-echo "${BOLD}${DARK_YELLOW}Preparing Complete${RESET}"
+echo -e "${BOLD}${DARK_YELLOW}Preparing Complete${RESET}"
 
