@@ -31,15 +31,23 @@ wget https://raw.githubusercontent.com/0xtnpxsgt/Allora-Worker-Chronos-Model/mai
 - During pasting `HEAD_ID` , Don't use `Ctrl+C` to copy and `Ctrl+V` to paste, instead just select the whole `KEY_ID` and Press Right Click
 
 ## Step 4: Edit App.py
+- EXPORT HEAD IP
+```bash
+cat head-data/keys/identity
+```
+
+## Step 5: Edit App.py
 - Replace `COINGECKO API`
 ```bash
 nano allora-chain/basic-coin-prediction-node/app.py
 ```
-## Step 5: Edit docker-compose.yml
+
+## Step 6: Edit docker-compose.yml
+- Replace `HEAD-ID`  `WALLETSEEDPHRASE` 
 ```bash
 nano allora-chain/basic-coin-prediction-node/docker-compose.yml
 ```
-#### Step 6: Build.
+#### Step 7: Build.
 - 1 
 ```bash
 cd allora-chain/basic-coin-prediction-node/
