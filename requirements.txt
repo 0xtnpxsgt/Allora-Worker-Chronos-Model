@@ -1,0 +1,9 @@
+flask[async]
+gunicorn[gthread]
+numpy==1.26.2
+pandas
+Requests==2.32.0
+transformers[torch]
+werkzeug>=3.0.3 # not directly required, pinned by Snyk to avoid a vulnerability
+git+https://github.com/amazon-science/chronos-forecasting.git
+python-dotenv
