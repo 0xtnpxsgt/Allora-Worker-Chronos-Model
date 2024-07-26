@@ -175,6 +175,32 @@ git+https://github.com/amazon-science/chronos-forecasting.git
 python-dotenv
 ```
 
+## Step 8: Create Dockerfile
+- Copy & Replace this code , then save `Ctrl+X Y ENTER`.
+```bash
+sudo rm -rf app.py && sudo nano Dockerfile
+```
+```bash
+# Use an official Python runtime as the base image
+FROM amd64/python:3.9-buster as project_env
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Install dependencies
+COPY requirements.txt requirements.txt
+RUN pip install --upgrade pip setuptools \
+    && pip install -r requirements.txt
+
+FROM project_env
+
+COPY . /app/
+
+# Set the entrypoint command
+CMD ["gunicorn", "--conf", "/app/gunicorn_conf.py", "main:app"]
+```
+
+
 ## Step 8: Edit docker-compose.yml
 - Copy & Replace `HEAD-ID`  `WALLETSEEDPHRASE` Worker1 - Worker2
 ```bash
