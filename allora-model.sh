@@ -57,13 +57,5 @@ echo
 execute_with_prompt 'cd'
 echo
 
-
-echo -e "${BOLD}${DARK_YELLOW}WGET DEFAULT FILE:${RESET}"
-wget -q https://raw.githubusercontent.com/0xtnpxsgt/Allora-Worker-Chronos-Model/main/Dockerfile -O allora-chain/basic-coin-prediction-node/Dockerfile
-wget -q https://raw.githubusercontent.com/0xtnpxsgt/Allora-Worker-Chronos-Model/main/app.py -O allora-chain/basic-coin-prediction-node/app.py
-wget -q https://raw.githubusercontent.com/0xtnpxsgt/Allora-Worker-Chronos-Model/main/main.py -O allora-chain/basic-coin-prediction-node/main.py
-wget -q https://raw.githubusercontent.com/0xtnpxsgt/Allora-Worker-Chronos-Model/main/requirements.txt -O allora-chain/basic-coin-prediction-node/requirements.txt
-echo
-
 echo -e "${BOLD}${DARK_YELLOW}Preparing Complete${RESET}"
 
