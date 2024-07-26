@@ -37,7 +37,7 @@ cat head-data/keys/identity
 ```
 
 ## Step 5: Edit App.py
-- Replace `COINGECKO API`
+- Replace API with your `COINGECKO API` , then save `Ctrl+X Y ENTER`.
 ```bash
 nano allora-chain/basic-coin-prediction-node/app.py
 ```
