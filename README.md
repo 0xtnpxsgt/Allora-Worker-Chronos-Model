@@ -44,13 +44,13 @@ cat head-data/keys/identity
 - Register on Coingecko & Create Demo API KEY
 - Replace API with your `COINGECKO API` , then save `Ctrl+X Y ENTER`.
 ```bash
-nano allora-chain/basic-coin-prediction-node/app.py
+nano app.py
 ```
 
 ## Step 6: Edit docker-compose.yml
 - Replace `HEAD-ID`  `WALLETSEEDPHRASE` 
 ```bash
-nano allora-chain/basic-coin-prediction-node/docker-compose.yml
+nano docker-compose.yml
 ```
 ## Step 7: Build.
 ```bash
