@@ -176,7 +176,7 @@ python-dotenv
 ```
 
 ## Step 8: Create Dockerfile
-- Copy & Replace this code , then save `Ctrl+X Y ENTER`.
+- Copy & Paste this code , `Ctrl+X Y ENTER` to save.
 
 - 1
 ```bash
@@ -190,7 +190,7 @@ RUN pip install requests
 COPY main.py /app/
 ```
 - 2
-
+-  Copy & Paste this code , `Ctrl+X Y ENTER` to save.
 ```bash
 sudo rm -rf app.py && sudo nano Dockerfile_inference
 ```
