@@ -33,7 +33,7 @@ wget https://raw.githubusercontent.com/0xtnpxsgt/Allora-Worker-Chronos-Model/mai
 - Once Done Proceed to Step 4
 
 ## Step 4: Edit App.py
-- Export New Head-ID
+- Export Head-ID
 ```bash
 cd allora-chain/basic-coin-prediction-node/
 ```
