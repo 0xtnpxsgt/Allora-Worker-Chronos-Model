@@ -178,43 +178,29 @@ python-dotenv
 ## Step 8: Create Dockerfile
 - Copy & Paste this code , `Ctrl+X Y ENTER` to save.
 
-- 1
 ```bash
 sudo rm -rf app.py && sudo nano Dockerfile
 ```
 ```bash
-FROM alloranetwork/allora-inference-base:latest
- 
-RUN pip install requests
- 
-COPY main.py /app/
-```
-- 2
--  Copy & Paste this code , `Ctrl+X Y ENTER` to save.
-```bash
-sudo rm -rf app.py && sudo nano Dockerfile_inference
-```
-```bash
-FROM amd64/python:3.9-buster
- 
+# Use an official Python runtime as the base image
+FROM amd64/python:3.9-buster as project_env
+
+# Set the working directory in the container
 WORKDIR /app
- 
-COPY . /app
- 
-# Install any needed packages specified in requirements.txt
-RUN pip install --upgrade pip \
+
+# Install dependencies
+COPY requirements.txt requirements.txt
+RUN pip install --upgrade pip setuptools \
     && pip install -r requirements.txt
- 
-EXPOSE 8000
- 
-ENV NAME sample
- 
-# Run gunicorn when the container launches and bind port 8000 from app.py
-CMD ["gunicorn", "-b", ":8000", "app:app"]
+
+FROM project_env
+
+COPY . /app/
+
+# Set the entrypoint command
+CMD ["gunicorn", "--conf", "/app/gunicorn_conf.py", "main:app"]
+
 ```
-
-
-
 
 ## Step 9: Edit docker-compose.yml
 - Copy & Replace `HEAD-ID`  `WALLETSEEDPHRASE` Worker1 - Worker2
