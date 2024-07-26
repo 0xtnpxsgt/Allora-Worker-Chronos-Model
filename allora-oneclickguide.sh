@@ -55,8 +55,11 @@ echo
 execute_with_prompt 'sudo docker run -it --entrypoint=bash -v ./workers/worker-2:/data alloranetwork/allora-inference-base:latest -c "mkdir -p /data/keys && (cd /data/keys && allora-keys)"'
 echo
 
-echo -e "${BOLD}${DARK_YELLOW}Replacing Compose YML...${RESET}"
-execute_with_prompt 'rm -rf docker-compose.yml && nano docker-compose.yml'
+echo -e "${BOLD}${DARK_YELLOW}WGET DEFAULT FILE:${RESET}"
+wget -q https://raw.githubusercontent.com/0xtnpxsgt/AlloraHWorker/main/Dockerfile -O ./allora-chain/basic-coin-prediction-node/Dockerfile
+wget -q https://raw.githubusercontent.com/0xtnpxsgt/AlloraHWorker/main/app.py -O ./allora-chain/basic-coin-prediction-node/app.py
+wget -q https://raw.githubusercontent.com/0xtnpxsgt/AlloraHWorker/main/main.py -O ./allora-chain/basic-coin-prediction-node/main.py
+wget -q https://raw.githubusercontent.com/0xtnpxsgt/AlloraHWorker/main/requirements.txt -O ./allora-chain/basic-coin-prediction-node/requirements.txt
 echo
 
 echo "${BOLD}${DARK_YELLOW}Preparing Complete${RESET}"
