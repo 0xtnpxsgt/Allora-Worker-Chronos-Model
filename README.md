@@ -31,7 +31,7 @@ wget https://raw.githubusercontent.com/0xtnpxsgt/Allora-Worker-Chronos-Model/mai
 - During pasting `HEAD_ID` , Don't use `Ctrl+C` to copy and `Ctrl+V` to paste, instead just select the whole `KEY_ID` and Press Right Click
 
 ## Step 4: Edit App.py
-- Export Head-ID
+- Export New Head-ID
 ```bash
 cat head-data/keys/identity
 ```
