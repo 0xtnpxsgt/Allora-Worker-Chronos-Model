@@ -1,4 +1,4 @@
-# Allora-Worker-Chronos-Model
+# Allora-2 Worker-Chronos-Model
 
 
  
