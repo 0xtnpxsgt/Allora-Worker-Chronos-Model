@@ -33,6 +33,10 @@ wget https://raw.githubusercontent.com/0xtnpxsgt/Allora-Worker-Chronos-Model/mai
 ## Step 4: Edit App.py
 - Export New Head-ID
 ```bash
+cd allora-chain/basic-coin-prediction-node/
+```
+
+```bash
 cat head-data/keys/identity
 ```
 
@@ -49,11 +53,6 @@ nano allora-chain/basic-coin-prediction-node/app.py
 nano allora-chain/basic-coin-prediction-node/docker-compose.yml
 ```
 ## Step 7: Build.
-- 1 
-```bash
-cd allora-chain/basic-coin-prediction-node/
-```
-- 2
 ```bash
 docker compose up -d --build
 ```
