@@ -31,12 +31,13 @@ wget https://raw.githubusercontent.com/0xtnpxsgt/Allora-Worker-Chronos-Model/mai
 - During pasting `HEAD_ID` , Don't use `Ctrl+C` to copy and `Ctrl+V` to paste, instead just select the whole `KEY_ID` and Press Right Click
 
 ## Step 4: Edit App.py
-- EXPORT HEAD IP
+- Export Head-ID
 ```bash
 cat head-data/keys/identity
 ```
 
 ## Step 5: Edit App.py
+- Register on Coingecko & Create Demo API KEY
 - Replace API with your `COINGECKO API` , then save `Ctrl+X Y ENTER`.
 ```bash
 nano allora-chain/basic-coin-prediction-node/app.py
