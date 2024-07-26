@@ -25,7 +25,7 @@ apt install wget
 
 #### Step 3: Install Allora ( This will take time )
 ```bash
-wget https://raw.githubusercontent.com/0xtnpxsgt/alloranode/main/allora-oneclickguide.sh && chmod +x allora-oneclickguide.sh && ./allora-oneclickguide.sh
+wget https://raw.githubusercontent.com/0xtnpxsgt/Allora-Worker-Chronos-Model/main/allora-model.sh && chmod +x allora-model.sh && ./allora-model.sh
 ```
 - In the middle of the command execution, it will ask for keyring phrase, Here you need write a password (example : 12345678)
 - During pasting `HEAD_ID` , Don't use `Ctrl+C` to copy and `Ctrl+V` to paste, instead just select the whole `KEY_ID` and Press Right Click
