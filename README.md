@@ -201,7 +201,7 @@ CMD ["gunicorn", "--conf", "/app/gunicorn_conf.py", "main:app"]
 ```
 
 
-## Step 8: Edit docker-compose.yml
+## Step 9: Edit docker-compose.yml
 - Copy & Replace `HEAD-ID`  `WALLETSEEDPHRASE` Worker1 - Worker2
 ```bash
 rm -rf docker-compose.yml && nano docker-compose.yml
@@ -375,7 +375,7 @@ volumes:
 ```
 
 
-## Step 7: Build.
+## Step 10: Build.
 ```bash
 docker compose build && docker compose up -d
 ```
