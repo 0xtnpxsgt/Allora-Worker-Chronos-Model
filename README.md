@@ -170,6 +170,7 @@ numpy==1.26.2
 pandas
 Requests==2.32.0
 transformers[torch]
+scikit_learn==1.3.2
 werkzeug>=3.0.3 # not directly required, pinned by Snyk to avoid a vulnerability
 git+https://github.com/amazon-science/chronos-forecasting.git
 python-dotenv
