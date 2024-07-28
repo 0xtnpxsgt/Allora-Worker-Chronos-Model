@@ -183,7 +183,7 @@ python-dotenv
 sudo rm -rf Dockerfile && sudo nano Dockerfile
 ```
 ```bash
-# Use an official Python runtime as the base image
+# Use an official Python runtime AS the base image
 FROM amd64/python:3.9-buster as project_env
 
 # Set the working directory in the container
