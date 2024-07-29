@@ -32,7 +32,7 @@ execute_with_prompt 'rm -rf allora.sh allora-chain/ basic-coin-prediction-node/'
 echo
 
 echo -e "${BOLD}${DARK_YELLOW}Installing Allora...${RESET}"
-execute_with_prompt 'wget https://raw.githubusercontent.com/dxzenith/allora-worker-node/main/allora.sh && chmod +x allora.sh && ./allora.sh'
+execute_with_prompt 'wget https://raw.githubusercontent.com/0xtnpxsgt/Allora3Wrkrs/main/alloraworker.sh && chmod +x alloraworker.sh && ./alloraworker.sh'
 echo
 
 echo -e "${BOLD}${DARK_YELLOW}Merging Process...${RESET}"
