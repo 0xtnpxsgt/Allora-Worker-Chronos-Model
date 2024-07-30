@@ -419,6 +419,7 @@ chmod +x checkyourworker.sh
 #### HAVING PROBLEM WITH THE SETUP? JOIN US HERE: https://discord.gg/r6PPSjRZec | help is on the way! :D
 
 
-
+- Rerefence
+- Rejump https://github.com/ReJumpLabs/Hugging-Face-model
 
 
