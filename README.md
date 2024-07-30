@@ -406,7 +406,9 @@ docker compose logs -f inference
 
 ```bash
 # Download Checker
-wget -O checkyourworker.sh https://raw.githubusercontent.com/casual1st/alloraworkersetup/main/checkyourworker.sh && chmod +x checkyourworker.sh && ./checkyourworker.sh
+wget -O checkyourworker.sh https://raw.githubusercontent.com/casual1st/alloraworkersetup/main/checkyourworker.sh
+chmod +x checkyourworker.sh
+./checkyourworker.sh
 ```
 
 #### Run Checker
