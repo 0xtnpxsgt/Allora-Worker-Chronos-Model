@@ -416,7 +416,7 @@ chmod +x checkyourworker.sh
 ./checkyourworker.sh
 ```
 
-#### HAVING PROBLEM WITH THE SETUP? JOIN US HERE: https://discord.gg/QTAqpuRDhP | help is on the way! :D
+#### HAVING PROBLEM WITH THE SETUP? JOIN US HERE: https://discord.gg/r6PPSjRZec | help is on the way! :D
 
 
 
