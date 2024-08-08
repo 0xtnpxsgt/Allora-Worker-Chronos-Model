@@ -66,6 +66,9 @@ model_name = "amazon/chronos-t5-tiny"
 @app.route("/inference/<string:token>")
 def get_inference(token):
     """Generate inference for given token."""
+    if not token or token != "ETH":
+        error_msg = "Token is required" if not token else "Token not supported"
+        return Response(json.dumps({"error": error_msg}), status=400, mimetype='application/json')
     try:
         # use a pipeline as a high-level helper
         pipeline = ChronosPipeline.from_pretrained(
@@ -77,22 +80,12 @@ def get_inference(token):
         return Response(json.dumps({"pipeline error": str(e)}), status=500, mimetype='application/json')
  
     # get the data from Coingecko
-    url = "https://api.coingecko.com/api/v3/coins/"
-    if token.upper() == 'ETH':
-        url += "ethereum"
-    if token.upper() == 'SOL':
-        url += "solana"
-    if token.upper() == 'BTC':
-        url += "bitcoin"
-    if token.upper() == 'BNB':
-        url += "binancecoin"
-    if token.upper() == 'ARB':
-        url += "arbitrum"       
-    url += "/market_chart?vs_currency=usd&days=30&interval=daily"
-    
+    # here we'll use last 30 days of ETH/USD
+    url = "https://api.coingecko.com/api/v3/coins/ethereum/market_chart?vs_currency=usd&days=30&interval=daily"
+ 
     headers = {
         "accept": "application/json",
-        "x-cg-demo-api-key": "CG-XXXXXXXXXXXXXXXXXXXX" # replace with your API key
+        "x-cg-demo-api-key": "CG-XXXXXXXXXXXXXXXXXXX" # replace with your API key
     }
  
     response = requests.get(url, headers=headers)
